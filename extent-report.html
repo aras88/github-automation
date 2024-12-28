@@ -1,0 +1,3677 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">gru 28, 2024 02:39:31 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testDeleteNonExistentRepository_Failure</p>
+            <p class="text-sm">
+              <span>02:39:33</span> / <span>00:00:01:403</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDeleteNonExistentRepository_Failure</h5>
+<span class='badge badge-success'>12.28.2024 02:39:33</span>
+<span class='badge badge-danger'>12.28.2024 02:39:34</span>
+<span class='badge badge-default'>00:00:01:403</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:33</td>
+        <td>
+          Precondition: Deleting all repositories with 'test-repo' in the name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:34</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: GET
+URI: https://api.github.com/user/repos
+Body:
+No body
+
+Response:
+Status Code: 200
+Body:
+[
+    
+]</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:34</td>
+        <td>
+          Executing test: Attempting to delete non-existent repository: non-existent-repo-3483fd
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:34</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/non-existent-repo-3483fd
+Body:
+No body
+
+Response:
+Status Code: 404
+Body:
+{
+    "message": "Not Found",
+    "documentation_url": "https://docs.github.com/rest/repos/repos#delete-a-repository",
+    "status": "404"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:34</td>
+        <td>
+          Deletion of non-existent repository failed as expected with status 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:34</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testDeleteRepository_Success</p>
+            <p class="text-sm">
+              <span>02:39:34</span> / <span>00:00:02:108</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDeleteRepository_Success</h5>
+<span class='badge badge-success'>12.28.2024 02:39:34</span>
+<span class='badge badge-danger'>12.28.2024 02:39:37</span>
+<span class='badge badge-default'>00:00:02:108</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:34</td>
+        <td>
+          Creating repository: test-repo-096d72
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:35</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"test-repo-096d72","description":"Repository created for deletion test","private":false}
+
+Response:
+Status Code: 201
+Body:
+{
+    "id": 909194007,
+    "node_id": "R_kgDONjEzFw",
+    "name": "test-repo-096d72",
+    "full_name": "mastalerzit/test-repo-096d72",
+    "private": false,
+    "owner": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/mastalerzit/test-repo-096d72",
+    "description": "Repository created for deletion test",
+    "fork": false,
+    "url": "https://api.github.com/repos/mastalerzit/test-repo-096d72",
+    "forks_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/forks",
+    "keys_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/teams",
+    "hooks_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/hooks",
+    "issue_events_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/events",
+    "assignees_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/tags",
+    "blobs_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/languages",
+    "stargazers_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/stargazers",
+    "contributors_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/contributors",
+    "subscribers_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/subscribers",
+    "subscription_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/subscription",
+    "commits_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/merges",
+    "archive_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/downloads",
+    "issues_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/labels{/name}",
+    "releases_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/mastalerzit/test-repo-096d72/deployments",
+    "created_at": "2024-12-28T01:39:35Z",
+    "updated_at": "2024-12-28T01:39:35Z",
+    "pushed_at": "2024-12-28T01:39:35Z",
+    "git_url": "git://github.com/mastalerzit/test-repo-096d72.git",
+    "ssh_url": "git@github.com:mastalerzit/test-repo-096d72.git",
+    "clone_url": "https://github.com/mastalerzit/test-repo-096d72.git",
+    "svn_url": "https://github.com/mastalerzit/test-repo-096d72",
+    "homepage": null,
+    "size": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "main",
+    "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+    },
+    "allow_squash_merge": true,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": false,
+    "allow_update_branch": false,
+    "use_squash_pr_title_as_default": false,
+    "squash_merge_commit_message": "COMMIT_MESSAGES",
+    "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+    "merge_commit_message": "PR_TITLE",
+    "merge_commit_title": "MERGE_MESSAGE",
+    "network_count": 0,
+    "subscribers_count": 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:36</td>
+        <td>
+          Repository created: test-repo-096d72
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:36</td>
+        <td>
+          Deleting the repository: test-repo-096d72
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:36</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-096d72
+Body:
+No body
+
+Response:
+Status Code: 204
+Body:
+</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:36</td>
+        <td>
+          Repository was deleted successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:36</td>
+        <td>
+          Verifying deletion by listing repositories
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:36</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: GET
+URI: https://api.github.com/user/repos
+Body:
+No body
+
+Response:
+Status Code: 200
+Body:
+[
+    
+]</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:36</td>
+        <td>
+          Verified that repository is no longer present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:36</td>
+        <td>
+          Cleaning up repository: test-repo-096d72
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:37</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-096d72
+Body:
+No body
+
+Response:
+Status Code: 404
+Body:
+{
+    "message": "Not Found",
+    "documentation_url": "https://docs.github.com/rest/repos/repos#delete-a-repository",
+    "status": "404"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:37</td>
+        <td>
+          Repository already deleted or does not exist.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:37</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testDeleteRepositoryWithoutAuthorization_Failure</p>
+            <p class="text-sm">
+              <span>02:39:37</span> / <span>00:00:01:904</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testDeleteRepositoryWithoutAuthorization_Failure</h5>
+<span class='badge badge-success'>12.28.2024 02:39:37</span>
+<span class='badge badge-danger'>12.28.2024 02:39:38</span>
+<span class='badge badge-default'>00:00:01:904</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:37</td>
+        <td>
+          Precondition: Creating repository for unauthorized deletion test: test-repo-190990
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:38</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"test-repo-190990","description":"Repository created for unauthorized deletion test","private":false}
+
+Response:
+Status Code: 201
+Body:
+{
+    "id": 909194013,
+    "node_id": "R_kgDONjEzHQ",
+    "name": "test-repo-190990",
+    "full_name": "mastalerzit/test-repo-190990",
+    "private": false,
+    "owner": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/mastalerzit/test-repo-190990",
+    "description": "Repository created for unauthorized deletion test",
+    "fork": false,
+    "url": "https://api.github.com/repos/mastalerzit/test-repo-190990",
+    "forks_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/forks",
+    "keys_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/teams",
+    "hooks_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/hooks",
+    "issue_events_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/events",
+    "assignees_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/tags",
+    "blobs_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/languages",
+    "stargazers_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/stargazers",
+    "contributors_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/contributors",
+    "subscribers_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/subscribers",
+    "subscription_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/subscription",
+    "commits_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/merges",
+    "archive_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/downloads",
+    "issues_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/labels{/name}",
+    "releases_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/mastalerzit/test-repo-190990/deployments",
+    "created_at": "2024-12-28T01:39:37Z",
+    "updated_at": "2024-12-28T01:39:37Z",
+    "pushed_at": "2024-12-28T01:39:37Z",
+    "git_url": "git://github.com/mastalerzit/test-repo-190990.git",
+    "ssh_url": "git@github.com:mastalerzit/test-repo-190990.git",
+    "clone_url": "https://github.com/mastalerzit/test-repo-190990.git",
+    "svn_url": "https://github.com/mastalerzit/test-repo-190990",
+    "homepage": null,
+    "size": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "main",
+    "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+    },
+    "allow_squash_merge": true,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": false,
+    "allow_update_branch": false,
+    "use_squash_pr_title_as_default": false,
+    "squash_merge_commit_message": "COMMIT_MESSAGES",
+    "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+    "merge_commit_message": "PR_TITLE",
+    "merge_commit_title": "MERGE_MESSAGE",
+    "network_count": 0,
+    "subscribers_count": 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:38</td>
+        <td>
+          Repository created: test-repo-190990
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:38</td>
+        <td>
+          Attempting to delete repository without authorization: test-repo-190990
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:38</td>
+        <td>
+          Attempting to delete repository without authorization: test-repo-190990
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:38</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-190990
+Body:
+No body
+
+Response:
+Status Code: 401
+Body:
+{
+    "message": "Bad credentials",
+    "documentation_url": "https://docs.github.com/rest",
+    "status": "401"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:38</td>
+        <td>
+          Unauthorized deletion attempt failed as expected with status 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:38</td>
+        <td>
+          Cleaning up repository: test-repo-190990
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:38</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-190990
+Body:
+No body
+
+Response:
+Status Code: 204
+Body:
+</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:38</td>
+        <td>
+          Repository cleaned up successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:38</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateNewRepository_Success</p>
+            <p class="text-sm">
+              <span>02:39:38</span> / <span>00:00:01:328</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateNewRepository_Success</h5>
+<span class='badge badge-success'>12.28.2024 02:39:38</span>
+<span class='badge badge-danger'>12.28.2024 02:39:40</span>
+<span class='badge badge-default'>00:00:01:328</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:38</td>
+        <td>
+          Creating repository: test-repo-33f554
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:39</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"test-repo-33f554","description":"Repository created by test","private":false}
+
+Response:
+Status Code: 201
+Body:
+{
+    "id": 909194017,
+    "node_id": "R_kgDONjEzIQ",
+    "name": "test-repo-33f554",
+    "full_name": "mastalerzit/test-repo-33f554",
+    "private": false,
+    "owner": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/mastalerzit/test-repo-33f554",
+    "description": "Repository created by test",
+    "fork": false,
+    "url": "https://api.github.com/repos/mastalerzit/test-repo-33f554",
+    "forks_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/forks",
+    "keys_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/teams",
+    "hooks_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/hooks",
+    "issue_events_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/events",
+    "assignees_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/tags",
+    "blobs_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/languages",
+    "stargazers_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/stargazers",
+    "contributors_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/contributors",
+    "subscribers_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/subscribers",
+    "subscription_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/subscription",
+    "commits_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/merges",
+    "archive_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/downloads",
+    "issues_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/labels{/name}",
+    "releases_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/mastalerzit/test-repo-33f554/deployments",
+    "created_at": "2024-12-28T01:39:39Z",
+    "updated_at": "2024-12-28T01:39:39Z",
+    "pushed_at": "2024-12-28T01:39:39Z",
+    "git_url": "git://github.com/mastalerzit/test-repo-33f554.git",
+    "ssh_url": "git@github.com:mastalerzit/test-repo-33f554.git",
+    "clone_url": "https://github.com/mastalerzit/test-repo-33f554.git",
+    "svn_url": "https://github.com/mastalerzit/test-repo-33f554",
+    "homepage": null,
+    "size": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "main",
+    "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+    },
+    "allow_squash_merge": true,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": false,
+    "allow_update_branch": false,
+    "use_squash_pr_title_as_default": false,
+    "squash_merge_commit_message": "COMMIT_MESSAGES",
+    "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+    "merge_commit_message": "PR_TITLE",
+    "merge_commit_title": "MERGE_MESSAGE",
+    "network_count": 0,
+    "subscribers_count": 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:39</td>
+        <td>
+          Received expected HTTP 201 status code for repository creation.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:39</td>
+        <td>
+          Repository object created successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:39</td>
+        <td>
+          Repository name matches the expected name.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:39</td>
+        <td>
+          Created repository URL: null
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:39</td>
+        <td>
+          Cleaning up repository: test-repo-33f554
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:40</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-33f554
+Body:
+No body
+
+Response:
+Status Code: 204
+Body:
+</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:40</td>
+        <td>
+          Repository cleaned up successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:40</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateRepositoryWithInvalidName_Failure</p>
+            <p class="text-sm">
+              <span>02:39:40</span> / <span>00:00:00:294</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateRepositoryWithInvalidName_Failure</h5>
+<span class='badge badge-success'>12.28.2024 02:39:40</span>
+<span class='badge badge-danger'>12.28.2024 02:39:40</span>
+<span class='badge badge-default'>00:00:00:294</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:40</td>
+        <td>
+          Attempting to create a repository with an invalid name.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:40</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"","description":"Repository created with invalid name","private":false}
+
+Response:
+Status Code: 422
+Body:
+{
+    "message": "Repository creation failed.",
+    "errors": [
+        {
+            "resource": "Repository",
+            "code": "missing_field",
+            "field": "name"
+        },
+        {
+            "resource": "Repository",
+            "code": "custom",
+            "field": "name",
+            "message": "name is too short (minimum is 1 character)"
+        }
+    ],
+    "documentation_url": "https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user",
+    "status": "422"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:40</td>
+        <td>
+          Received expected HTTP 422 status code for invalid repository name.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:40</td>
+        <td>
+          Response indicates the issue with the repository name.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:40</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateRepositoryWithDuplicateName_Failure</p>
+            <p class="text-sm">
+              <span>02:39:40</span> / <span>00:00:01:677</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateRepositoryWithDuplicateName_Failure</h5>
+<span class='badge badge-success'>12.28.2024 02:39:40</span>
+<span class='badge badge-danger'>12.28.2024 02:39:42</span>
+<span class='badge badge-default'>00:00:01:677</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:40</td>
+        <td>
+          Creating repository with name: test-repo-ac3ed0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:41</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"test-repo-ac3ed0","description":"Initial repository creation for duplicate test","private":false}
+
+Response:
+Status Code: 201
+Body:
+{
+    "id": 909194024,
+    "node_id": "R_kgDONjEzKA",
+    "name": "test-repo-ac3ed0",
+    "full_name": "mastalerzit/test-repo-ac3ed0",
+    "private": false,
+    "owner": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/mastalerzit/test-repo-ac3ed0",
+    "description": "Initial repository creation for duplicate test",
+    "fork": false,
+    "url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0",
+    "forks_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/forks",
+    "keys_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/teams",
+    "hooks_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/hooks",
+    "issue_events_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/events",
+    "assignees_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/tags",
+    "blobs_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/languages",
+    "stargazers_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/stargazers",
+    "contributors_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/contributors",
+    "subscribers_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/subscribers",
+    "subscription_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/subscription",
+    "commits_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/merges",
+    "archive_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/downloads",
+    "issues_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/labels{/name}",
+    "releases_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/mastalerzit/test-repo-ac3ed0/deployments",
+    "created_at": "2024-12-28T01:39:40Z",
+    "updated_at": "2024-12-28T01:39:41Z",
+    "pushed_at": "2024-12-28T01:39:41Z",
+    "git_url": "git://github.com/mastalerzit/test-repo-ac3ed0.git",
+    "ssh_url": "git@github.com:mastalerzit/test-repo-ac3ed0.git",
+    "clone_url": "https://github.com/mastalerzit/test-repo-ac3ed0.git",
+    "svn_url": "https://github.com/mastalerzit/test-repo-ac3ed0",
+    "homepage": null,
+    "size": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "main",
+    "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+    },
+    "allow_squash_merge": true,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": false,
+    "allow_update_branch": false,
+    "use_squash_pr_title_as_default": false,
+    "squash_merge_commit_message": "COMMIT_MESSAGES",
+    "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+    "merge_commit_message": "PR_TITLE",
+    "merge_commit_title": "MERGE_MESSAGE",
+    "network_count": 0,
+    "subscribers_count": 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:41</td>
+        <td>
+          Initial repository created successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:41</td>
+        <td>
+          Attempting to create a duplicate repository with name: test-repo-ac3ed0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:41</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"test-repo-ac3ed0","description":"Duplicate repository creation attempt","private":false}
+
+Response:
+Status Code: 422
+Body:
+{
+    "message": "Repository creation failed.",
+    "errors": [
+        {
+            "resource": "Repository",
+            "code": "custom",
+            "field": "name",
+            "message": "name already exists on this account"
+        }
+    ],
+    "documentation_url": "https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user",
+    "status": "422"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:41</td>
+        <td>
+          Received expected HTTP 422 status code for duplicate repository name.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:41</td>
+        <td>
+          Response indicates that the repository already exists.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:41</td>
+        <td>
+          Cleaning up repository: test-repo-ac3ed0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:42</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-ac3ed0
+Body:
+No body
+
+Response:
+Status Code: 204
+Body:
+</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:42</td>
+        <td>
+          Repository cleaned up successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:42</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateRepositoryWithoutAuthorization_Failure</p>
+            <p class="text-sm">
+              <span>02:39:42</span> / <span>00:00:00:250</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateRepositoryWithoutAuthorization_Failure</h5>
+<span class='badge badge-success'>12.28.2024 02:39:42</span>
+<span class='badge badge-danger'>12.28.2024 02:39:42</span>
+<span class='badge badge-default'>00:00:00:250</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:42</td>
+        <td>
+          Attempting to create a repository without proper authorization.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:42</td>
+        <td>
+          Attempting to create repository without authorization: test-repo-d31834
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:42</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"test-repo-d31834","description":"Repository created without authorization","private":false}
+
+Response:
+Status Code: 401
+Body:
+{
+    "message": "Bad credentials",
+    "documentation_url": "https://docs.github.com/rest",
+    "status": "401"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:42</td>
+        <td>
+          Received expected HTTP 401 status code for unauthorized repository creation.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:42</td>
+        <td>
+          Response indicates unauthorized access.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:42</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testGetUserProfile_InvalidToken</p>
+            <p class="text-sm">
+              <span>02:39:42</span> / <span>00:00:00:234</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testGetUserProfile_InvalidToken</h5>
+<span class='badge badge-success'>12.28.2024 02:39:42</span>
+<span class='badge badge-danger'>12.28.2024 02:39:42</span>
+<span class='badge badge-default'>00:00:00:234</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:42</td>
+        <td>
+          Attempting to retrieve a user profile with an invalid token.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:42</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: GET
+URI: https://api.github.com/user
+Body:
+No body
+
+Response:
+Status Code: 401
+Body:
+{
+    "message": "Bad credentials",
+    "documentation_url": "https://docs.github.com/rest",
+    "status": "401"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:42</td>
+        <td>
+          Received 401 Unauthorized status.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:42</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testGetUserProfile_Success</p>
+            <p class="text-sm">
+              <span>02:39:42</span> / <span>00:00:00:273</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testGetUserProfile_Success</h5>
+<span class='badge badge-success'>12.28.2024 02:39:42</span>
+<span class='badge badge-danger'>12.28.2024 02:39:43</span>
+<span class='badge badge-default'>00:00:00:273</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:42</td>
+        <td>
+          Retrieving user profile with a valid token.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:43</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: GET
+URI: https://api.github.com/user
+Body:
+No body
+
+Response:
+Status Code: 200
+Body:
+{
+    "login": "mastalerzit",
+    "id": 193018957,
+    "node_id": "U_kgDOC4E8TQ",
+    "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mastalerzit",
+    "html_url": "https://github.com/mastalerzit",
+    "followers_url": "https://api.github.com/users/mastalerzit/followers",
+    "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+    "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+    "repos_url": "https://api.github.com/users/mastalerzit/repos",
+    "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+    "type": "User",
+    "user_view_type": "private",
+    "site_admin": false,
+    "name": null,
+    "company": null,
+    "blog": "",
+    "location": null,
+    "email": null,
+    "hireable": null,
+    "bio": null,
+    "twitter_username": null,
+    "notification_email": null,
+    "public_repos": 0,
+    "public_gists": 0,
+    "followers": 1,
+    "following": 0,
+    "created_at": "2024-12-27T21:44:50Z",
+    "updated_at": "2024-12-27T21:45:05Z",
+    "private_gists": 0,
+    "total_private_repos": 0,
+    "owned_private_repos": 0,
+    "disk_usage": 0,
+    "collaborators": 0,
+    "two_factor_authentication": false,
+    "plan": {
+        "name": "free",
+        "space": 976562499,
+        "collaborators": 0,
+        "private_repos": 10000
+    }
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:43</td>
+        <td>
+          UserProfile retrieved successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:43</td>
+        <td>
+          User login is: mastalerzit
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:43</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateIssueWithoutTitle_Failure</p>
+            <p class="text-sm">
+              <span>02:39:43</span> / <span>00:00:01:874</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateIssueWithoutTitle_Failure</h5>
+<span class='badge badge-success'>12.28.2024 02:39:43</span>
+<span class='badge badge-danger'>12.28.2024 02:39:45</span>
+<span class='badge badge-default'>00:00:01:874</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:43</td>
+        <td>
+          Creating repository: test-repo-0b7c890f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:44</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"test-repo-0b7c890f","description":"Repository created for issue test","private":false}
+
+Response:
+Status Code: 201
+Body:
+{
+    "id": 909194033,
+    "node_id": "R_kgDONjEzMQ",
+    "name": "test-repo-0b7c890f",
+    "full_name": "mastalerzit/test-repo-0b7c890f",
+    "private": false,
+    "owner": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/mastalerzit/test-repo-0b7c890f",
+    "description": "Repository created for issue test",
+    "fork": false,
+    "url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f",
+    "forks_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/forks",
+    "keys_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/teams",
+    "hooks_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/hooks",
+    "issue_events_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/events",
+    "assignees_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/tags",
+    "blobs_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/languages",
+    "stargazers_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/stargazers",
+    "contributors_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/contributors",
+    "subscribers_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/subscribers",
+    "subscription_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/subscription",
+    "commits_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/merges",
+    "archive_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/downloads",
+    "issues_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/labels{/name}",
+    "releases_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/deployments",
+    "created_at": "2024-12-28T01:39:43Z",
+    "updated_at": "2024-12-28T01:39:43Z",
+    "pushed_at": "2024-12-28T01:39:43Z",
+    "git_url": "git://github.com/mastalerzit/test-repo-0b7c890f.git",
+    "ssh_url": "git@github.com:mastalerzit/test-repo-0b7c890f.git",
+    "clone_url": "https://github.com/mastalerzit/test-repo-0b7c890f.git",
+    "svn_url": "https://github.com/mastalerzit/test-repo-0b7c890f",
+    "homepage": null,
+    "size": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "main",
+    "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+    },
+    "allow_squash_merge": true,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": false,
+    "allow_update_branch": false,
+    "use_squash_pr_title_as_default": false,
+    "squash_merge_commit_message": "COMMIT_MESSAGES",
+    "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+    "merge_commit_message": "PR_TITLE",
+    "merge_commit_title": "MERGE_MESSAGE",
+    "network_count": 0,
+    "subscribers_count": 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:44</td>
+        <td>
+          Repository created successfully: test-repo-0b7c890f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:44</td>
+        <td>
+          Verified repository name: test-repo-0b7c890f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:44</td>
+        <td>
+          Attempting to create an issue without a title in repository: test-repo-0b7c890f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:44</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/repos/mastalerzit/test-repo-0b7c890f/issues
+Body:
+{"title":"","body":"Issue without a title should fail."}
+
+Response:
+Status Code: 422
+Body:
+{
+    "message": "Validation Failed",
+    "errors": [
+        {
+            "resource": "Issue",
+            "code": "missing_field",
+            "field": "title"
+        }
+    ],
+    "documentation_url": "https://docs.github.com/rest/issues/issues#create-an-issue",
+    "status": "422"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:44</td>
+        <td>
+          Received expected HTTP 422 status code for missing title.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:44</td>
+        <td>
+          Response indicates the issue with the missing title.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:44</td>
+        <td>
+          Cleaning up repository: test-repo-0b7c890f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:45</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-0b7c890f
+Body:
+No body
+
+Response:
+Status Code: 204
+Body:
+</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:45</td>
+        <td>
+          Repository deleted successfully: test-repo-0b7c890f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:45</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateIssue_Success</p>
+            <p class="text-sm">
+              <span>02:39:45</span> / <span>00:00:02:529</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateIssue_Success</h5>
+<span class='badge badge-success'>12.28.2024 02:39:45</span>
+<span class='badge badge-danger'>12.28.2024 02:39:47</span>
+<span class='badge badge-default'>00:00:02:529</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:45</td>
+        <td>
+          Creating repository: test-repo-7a49007d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:45</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"test-repo-7a49007d","description":"Repository created for issue test","private":false}
+
+Response:
+Status Code: 201
+Body:
+{
+    "id": 909194041,
+    "node_id": "R_kgDONjEzOQ",
+    "name": "test-repo-7a49007d",
+    "full_name": "mastalerzit/test-repo-7a49007d",
+    "private": false,
+    "owner": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/mastalerzit/test-repo-7a49007d",
+    "description": "Repository created for issue test",
+    "fork": false,
+    "url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d",
+    "forks_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/forks",
+    "keys_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/teams",
+    "hooks_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/hooks",
+    "issue_events_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/events",
+    "assignees_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/tags",
+    "blobs_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/languages",
+    "stargazers_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/stargazers",
+    "contributors_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/contributors",
+    "subscribers_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/subscribers",
+    "subscription_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/subscription",
+    "commits_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/merges",
+    "archive_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/downloads",
+    "issues_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/labels{/name}",
+    "releases_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/deployments",
+    "created_at": "2024-12-28T01:39:45Z",
+    "updated_at": "2024-12-28T01:39:45Z",
+    "pushed_at": "2024-12-28T01:39:45Z",
+    "git_url": "git://github.com/mastalerzit/test-repo-7a49007d.git",
+    "ssh_url": "git@github.com:mastalerzit/test-repo-7a49007d.git",
+    "clone_url": "https://github.com/mastalerzit/test-repo-7a49007d.git",
+    "svn_url": "https://github.com/mastalerzit/test-repo-7a49007d",
+    "homepage": null,
+    "size": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "main",
+    "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+    },
+    "allow_squash_merge": true,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": false,
+    "allow_update_branch": false,
+    "use_squash_pr_title_as_default": false,
+    "squash_merge_commit_message": "COMMIT_MESSAGES",
+    "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+    "merge_commit_message": "PR_TITLE",
+    "merge_commit_title": "MERGE_MESSAGE",
+    "network_count": 0,
+    "subscribers_count": 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:45</td>
+        <td>
+          Repository created successfully: test-repo-7a49007d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:45</td>
+        <td>
+          Verified repository name: test-repo-7a49007d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:45</td>
+        <td>
+          Creating an issue in repository: test-repo-7a49007d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:46</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues
+Body:
+{"title":"Test Issue JUnit 5 - 3a010d","body":"This is a sample issue created by a JUnit 5 test."}
+
+Response:
+Status Code: 201
+Body:
+{
+    "url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1",
+    "repository_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d",
+    "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1/labels{/name}",
+    "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1/comments",
+    "events_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1/events",
+    "html_url": "https://github.com/mastalerzit/test-repo-7a49007d/issues/1",
+    "id": 2761388616,
+    "node_id": "I_kwDONjEzOc6kl3JI",
+    "number": 1,
+    "title": "Test Issue JUnit 5 - 3a010d",
+    "user": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "labels": [
+        
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+        
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2024-12-28T01:39:46Z",
+    "updated_at": "2024-12-28T01:39:46Z",
+    "closed_at": null,
+    "author_association": "OWNER",
+    "active_lock_reason": null,
+    "body": "This is a sample issue created by a JUnit 5 test.",
+    "closed_by": null,
+    "reactions": {
+        "url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1/timeline",
+    "performed_via_github_app": null,
+    "state_reason": null
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:46</td>
+        <td>
+          Issue created successfully with title: Test Issue JUnit 5 - 3a010d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:46</td>
+        <td>
+          Verified issue title: Test Issue JUnit 5 - 3a010d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:46</td>
+        <td>
+          Issue URL: https://github.com/mastalerzit/test-repo-7a49007d/issues/1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:47</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: PATCH
+URI: https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1
+Body:
+{"state":"closed"}
+
+Response:
+Status Code: 200
+Body:
+{
+    "url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1",
+    "repository_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d",
+    "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1/labels{/name}",
+    "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1/comments",
+    "events_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1/events",
+    "html_url": "https://github.com/mastalerzit/test-repo-7a49007d/issues/1",
+    "id": 2761388616,
+    "node_id": "I_kwDONjEzOc6kl3JI",
+    "number": 1,
+    "title": "Test Issue JUnit 5 - 3a010d",
+    "user": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "labels": [
+        
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+        
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2024-12-28T01:39:46Z",
+    "updated_at": "2024-12-28T01:39:46Z",
+    "closed_at": "2024-12-28T01:39:46Z",
+    "author_association": "OWNER",
+    "active_lock_reason": null,
+    "body": "This is a sample issue created by a JUnit 5 test.",
+    "closed_by": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "reactions": {
+        "url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/mastalerzit/test-repo-7a49007d/issues/1/timeline",
+    "performed_via_github_app": null,
+    "state_reason": "completed"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:47</td>
+        <td>
+          Issue closed successfully: #1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:47</td>
+        <td>
+          Cleaning up repository: test-repo-7a49007d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:47</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-7a49007d
+Body:
+No body
+
+Response:
+Status Code: 204
+Body:
+</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:47</td>
+        <td>
+          Repository deleted successfully: test-repo-7a49007d
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:47</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateIssueWithoutAuthorization_Failure</p>
+            <p class="text-sm">
+              <span>02:39:47</span> / <span>00:00:01:586</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateIssueWithoutAuthorization_Failure</h5>
+<span class='badge badge-success'>12.28.2024 02:39:47</span>
+<span class='badge badge-danger'>12.28.2024 02:39:49</span>
+<span class='badge badge-default'>00:00:01:586</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:47</td>
+        <td>
+          Creating repository: test-repo-7a6e4b
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:48</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"test-repo-7a6e4b","description":"Repository created for unauthorized issue creation test","private":false}
+
+Response:
+Status Code: 201
+Body:
+{
+    "id": 909194051,
+    "node_id": "R_kgDONjEzQw",
+    "name": "test-repo-7a6e4b",
+    "full_name": "mastalerzit/test-repo-7a6e4b",
+    "private": false,
+    "owner": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/mastalerzit/test-repo-7a6e4b",
+    "description": "Repository created for unauthorized issue creation test",
+    "fork": false,
+    "url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b",
+    "forks_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/forks",
+    "keys_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/teams",
+    "hooks_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/hooks",
+    "issue_events_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/events",
+    "assignees_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/tags",
+    "blobs_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/languages",
+    "stargazers_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/stargazers",
+    "contributors_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/contributors",
+    "subscribers_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/subscribers",
+    "subscription_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/subscription",
+    "commits_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/merges",
+    "archive_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/downloads",
+    "issues_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/labels{/name}",
+    "releases_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/mastalerzit/test-repo-7a6e4b/deployments",
+    "created_at": "2024-12-28T01:39:47Z",
+    "updated_at": "2024-12-28T01:39:48Z",
+    "pushed_at": "2024-12-28T01:39:48Z",
+    "git_url": "git://github.com/mastalerzit/test-repo-7a6e4b.git",
+    "ssh_url": "git@github.com:mastalerzit/test-repo-7a6e4b.git",
+    "clone_url": "https://github.com/mastalerzit/test-repo-7a6e4b.git",
+    "svn_url": "https://github.com/mastalerzit/test-repo-7a6e4b",
+    "homepage": null,
+    "size": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "main",
+    "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+    },
+    "allow_squash_merge": true,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": false,
+    "allow_update_branch": false,
+    "use_squash_pr_title_as_default": false,
+    "squash_merge_commit_message": "COMMIT_MESSAGES",
+    "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+    "merge_commit_message": "PR_TITLE",
+    "merge_commit_title": "MERGE_MESSAGE",
+    "network_count": 0,
+    "subscribers_count": 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:48</td>
+        <td>
+          Repository created successfully: test-repo-7a6e4b
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:48</td>
+        <td>
+          Verified repository name: test-repo-7a6e4b
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:48</td>
+        <td>
+          Attempting to create an issue without authorization in repository: test-repo-7a6e4b
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:48</td>
+        <td>
+          Attempting to create issue without authorization: Unauthorized Issue Creation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:48</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/repos/null/test-repo-7a6e4b/issues
+Body:
+{"title":"Unauthorized Issue Creation","body":"This issue creation should fail due to lack of authorization."}
+
+Response:
+Status Code: 401
+Body:
+{
+    "message": "Bad credentials",
+    "documentation_url": "https://docs.github.com/rest",
+    "status": "401"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:48</td>
+        <td>
+          Issue creation without authorization failed as expected with status 401
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:48</td>
+        <td>
+          Cleaning up repository: test-repo-7a6e4b
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:49</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-7a6e4b
+Body:
+No body
+
+Response:
+Status Code: 204
+Body:
+</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:49</td>
+        <td>
+          Repository deleted successfully: test-repo-7a6e4b
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:49</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testCreateIssueInNonExistentRepository_Failure</p>
+            <p class="text-sm">
+              <span>02:39:49</span> / <span>00:00:00:368</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCreateIssueInNonExistentRepository_Failure</h5>
+<span class='badge badge-success'>12.28.2024 02:39:49</span>
+<span class='badge badge-danger'>12.28.2024 02:39:49</span>
+<span class='badge badge-default'>00:00:00:368</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:49</td>
+        <td>
+          Executing test: Attempting to create an issue in non-existent repository: non-existent-repo-e32bcf
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:49</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/repos/null/non-existent-repo-e32bcf/issues
+Body:
+{"title":"Issue in Non-Existent Repo","body":"This issue creation should fail as the repository does not exist."}
+
+Response:
+Status Code: 404
+Body:
+{
+    "message": "Not Found",
+    "documentation_url": "https://docs.github.com/rest/issues/issues#create-an-issue",
+    "status": "404"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:49</td>
+        <td>
+          Issue creation in non-existent repository failed as expected with status 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:49</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testListUserRepositories_Success</p>
+            <p class="text-sm">
+              <span>02:39:49</span> / <span>00:00:01:719</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testListUserRepositories_Success</h5>
+<span class='badge badge-success'>12.28.2024 02:39:49</span>
+<span class='badge badge-danger'>12.28.2024 02:39:51</span>
+<span class='badge badge-default'>00:00:01:719</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:49</td>
+        <td>
+          Creating repository: test-repo-e941e6
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:50</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"test-repo-e941e6","description":"Repository created for list test","private":false}
+
+Response:
+Status Code: 201
+Body:
+{
+    "id": 909194055,
+    "node_id": "R_kgDONjEzRw",
+    "name": "test-repo-e941e6",
+    "full_name": "mastalerzit/test-repo-e941e6",
+    "private": false,
+    "owner": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/mastalerzit/test-repo-e941e6",
+    "description": "Repository created for list test",
+    "fork": false,
+    "url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6",
+    "forks_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/forks",
+    "keys_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/teams",
+    "hooks_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/hooks",
+    "issue_events_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/events",
+    "assignees_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/tags",
+    "blobs_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/languages",
+    "stargazers_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/stargazers",
+    "contributors_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/contributors",
+    "subscribers_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/subscribers",
+    "subscription_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/subscription",
+    "commits_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/merges",
+    "archive_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/downloads",
+    "issues_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/labels{/name}",
+    "releases_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/deployments",
+    "created_at": "2024-12-28T01:39:49Z",
+    "updated_at": "2024-12-28T01:39:50Z",
+    "pushed_at": "2024-12-28T01:39:50Z",
+    "git_url": "git://github.com/mastalerzit/test-repo-e941e6.git",
+    "ssh_url": "git@github.com:mastalerzit/test-repo-e941e6.git",
+    "clone_url": "https://github.com/mastalerzit/test-repo-e941e6.git",
+    "svn_url": "https://github.com/mastalerzit/test-repo-e941e6",
+    "homepage": null,
+    "size": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "main",
+    "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+    },
+    "allow_squash_merge": true,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": false,
+    "allow_update_branch": false,
+    "use_squash_pr_title_as_default": false,
+    "squash_merge_commit_message": "COMMIT_MESSAGES",
+    "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+    "merge_commit_message": "PR_TITLE",
+    "merge_commit_title": "MERGE_MESSAGE",
+    "network_count": 0,
+    "subscribers_count": 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:50</td>
+        <td>
+          Repository created: test-repo-e941e6
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:50</td>
+        <td>
+          Listing user repositories.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:50</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: GET
+URI: https://api.github.com/user/repos
+Body:
+No body
+
+Response:
+Status Code: 200
+Body:
+[
+    {
+        "id": 909194055,
+        "node_id": "R_kgDONjEzRw",
+        "name": "test-repo-e941e6",
+        "full_name": "mastalerzit/test-repo-e941e6",
+        "private": false,
+        "owner": {
+            "login": "mastalerzit",
+            "id": 193018957,
+            "node_id": "U_kgDOC4E8TQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mastalerzit",
+            "html_url": "https://github.com/mastalerzit",
+            "followers_url": "https://api.github.com/users/mastalerzit/followers",
+            "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+            "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+            "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+            "repos_url": "https://api.github.com/users/mastalerzit/repos",
+            "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "html_url": "https://github.com/mastalerzit/test-repo-e941e6",
+        "description": "Repository created for list test",
+        "fork": false,
+        "url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6",
+        "forks_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/forks",
+        "keys_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/teams",
+        "hooks_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/hooks",
+        "issue_events_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/events",
+        "assignees_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/tags",
+        "blobs_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/languages",
+        "stargazers_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/stargazers",
+        "contributors_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/contributors",
+        "subscribers_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/subscribers",
+        "subscription_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/subscription",
+        "commits_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/merges",
+        "archive_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/downloads",
+        "issues_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/labels{/name}",
+        "releases_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/mastalerzit/test-repo-e941e6/deployments",
+        "created_at": "2024-12-28T01:39:49Z",
+        "updated_at": "2024-12-28T01:39:50Z",
+        "pushed_at": "2024-12-28T01:39:50Z",
+        "git_url": "git://github.com/mastalerzit/test-repo-e941e6.git",
+        "ssh_url": "git@github.com:mastalerzit/test-repo-e941e6.git",
+        "clone_url": "https://github.com/mastalerzit/test-repo-e941e6.git",
+        "svn_url": "https://github.com/mastalerzit/test-repo-e941e6",
+        "homepage": null,
+        "size": 0,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": null,
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": true,
+        "has_pages": false,
+        "has_discussions": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 0,
+        "license": null,
+        "allow_forking": true,
+        "is_template": false,
+        "web_commit_signoff_required": false,
+        "topics": [
+            
+        ],
+        "visibility": "public",
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "main",
+        "permissions": {
+            "admin": true,
+            "maintain": true,
+            "push": true,
+            "triage": true,
+            "pull": true
+        }
+    }
+]</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:50</td>
+        <td>
+          Repositories listed successfully and created repository is present.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:50</td>
+        <td>
+          Cleaning up repository: test-repo-e941e6
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:51</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-e941e6
+Body:
+No body
+
+Response:
+Status Code: 204
+Body:
+</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:51</td>
+        <td>
+          Repository cleaned up successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:51</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testListRepositories_WhenEmpty</p>
+            <p class="text-sm">
+              <span>02:39:51</span> / <span>00:00:02:183</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testListRepositories_WhenEmpty</h5>
+<span class='badge badge-success'>12.28.2024 02:39:51</span>
+<span class='badge badge-danger'>12.28.2024 02:39:53</span>
+<span class='badge badge-default'>00:00:02:183</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:51</td>
+        <td>
+          Deleting all repositories with 'test-repo' in the name.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:51</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: GET
+URI: https://api.github.com/user/repos
+Body:
+No body
+
+Response:
+Status Code: 200
+Body:
+[
+    
+]</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:51</td>
+        <td>
+          Creating repository: test-repo-c284f2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:52</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: POST
+URI: https://api.github.com/user/repos
+Body:
+{"name":"test-repo-c284f2","description":"Repository created for list test","private":false}
+
+Response:
+Status Code: 201
+Body:
+{
+    "id": 909194063,
+    "node_id": "R_kgDONjEzTw",
+    "name": "test-repo-c284f2",
+    "full_name": "mastalerzit/test-repo-c284f2",
+    "private": false,
+    "owner": {
+        "login": "mastalerzit",
+        "id": 193018957,
+        "node_id": "U_kgDOC4E8TQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mastalerzit",
+        "html_url": "https://github.com/mastalerzit",
+        "followers_url": "https://api.github.com/users/mastalerzit/followers",
+        "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+        "repos_url": "https://api.github.com/users/mastalerzit/repos",
+        "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/mastalerzit/test-repo-c284f2",
+    "description": "Repository created for list test",
+    "fork": false,
+    "url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2",
+    "forks_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/forks",
+    "keys_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/teams",
+    "hooks_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/hooks",
+    "issue_events_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/events",
+    "assignees_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/tags",
+    "blobs_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/languages",
+    "stargazers_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/stargazers",
+    "contributors_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/contributors",
+    "subscribers_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/subscribers",
+    "subscription_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/subscription",
+    "commits_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/merges",
+    "archive_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/downloads",
+    "issues_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/labels{/name}",
+    "releases_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/mastalerzit/test-repo-c284f2/deployments",
+    "created_at": "2024-12-28T01:39:51Z",
+    "updated_at": "2024-12-28T01:39:52Z",
+    "pushed_at": "2024-12-28T01:39:52Z",
+    "git_url": "git://github.com/mastalerzit/test-repo-c284f2.git",
+    "ssh_url": "git@github.com:mastalerzit/test-repo-c284f2.git",
+    "clone_url": "https://github.com/mastalerzit/test-repo-c284f2.git",
+    "svn_url": "https://github.com/mastalerzit/test-repo-c284f2",
+    "homepage": null,
+    "size": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "main",
+    "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+    },
+    "allow_squash_merge": true,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": false,
+    "allow_update_branch": false,
+    "use_squash_pr_title_as_default": false,
+    "squash_merge_commit_message": "COMMIT_MESSAGES",
+    "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+    "merge_commit_message": "PR_TITLE",
+    "merge_commit_title": "MERGE_MESSAGE",
+    "network_count": 0,
+    "subscribers_count": 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:52</td>
+        <td>
+          Repository created: test-repo-c284f2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:52</td>
+        <td>
+          Deleting repository to simulate empty repository list.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:52</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-c284f2
+Body:
+No body
+
+Response:
+Status Code: 204
+Body:
+</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:52</td>
+        <td>
+          Repository deleted successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:52</td>
+        <td>
+          Listing user repositories.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:53</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: GET
+URI: https://api.github.com/user/repos
+Body:
+No body
+
+Response:
+Status Code: 200
+Body:
+[
+    
+]</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:53</td>
+        <td>
+          Repository list is empty as expected.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:53</td>
+        <td>
+          Cleaning up repository: test-repo-c284f2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>02:39:53</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Request:
+Method: DELETE
+URI: https://api.github.com/repos/mastalerzit/test-repo-c284f2
+Body:
+No body
+
+Response:
+Status Code: 404
+Body:
+{
+    "message": "Not Found",
+    "documentation_url": "https://docs.github.com/rest/repos/repos#delete-a-repository",
+    "status": "404"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:53</td>
+        <td>
+          Repository already deleted or does not exist.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>02:39:53</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>gru 28, 2024 02:39:31 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>gru 28, 2024 02:39:53 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>15</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>15</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='44%'><b>62</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>77</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"testDeleteNonExistentRepository_Failure":1.403,"testDeleteRepository_Success":2.108,"testDeleteRepositoryWithoutAuthorization_Failure":1.904,"testCreateNewRepository_Success":1.328,"testCreateRepositoryWithInvalidName_Failure":0.294,"testCreateRepositoryWithDuplicateName_Failure":1.677,"testCreateRepositoryWithoutAuthorization_Failure":0.25,"testGetUserProfile_InvalidToken":0.234,"testGetUserProfile_Success":0.273,"testCreateIssueWithoutTitle_Failure":1.874,"testCreateIssue_Success":2.529,"testCreateIssueWithoutAuthorization_Failure":1.586,"testCreateIssueInNonExistentRepository_Failure":0.368,"testListUserRepositories_Success":1.719,"testListRepositories_WhenEmpty":2.183
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 15,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 62,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 77
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

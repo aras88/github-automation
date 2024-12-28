@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.github.tests.UserProfileTest" time="0.537" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/aras88/GitHub/github-automation/target/test-classes:/Users/aras88/GitHub/github-automation/target/classes:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.1/spring-boot-starter-web-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.1/spring-boot-starter-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot/3.4.1/spring-boot-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.1/spring-boot-autoconfigure-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.1/spring-boot-starter-logging-3.4.1.jar:/Users/aras88/.m2/repository/ch/qos/logback/logback-classic/1.5.12/logback-classic-1.5.12.jar:/Users/aras88/.m2/repository/ch/qos/logback/logback-core/1.5.12/logback-core-1.5.12.jar:/Users/aras88/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/aras88/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/aras88/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/aras88/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/aras88/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.1/spring-boot-starter-json-3.4.1.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.2/jackson-datatype-jdk8-2.18.2.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.2/jackson-datatype-jsr310-2.18.2.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.2/jackson-module-parameter-names-2.18.2.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.1/spring-boot-starter-tomcat-3.4.1.jar:/Users/aras88/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.34/tomcat-embed-core-10.1.34.jar:/Users/aras88/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.34/tomcat-embed-el-10.1.34.jar:/Users/aras88/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.34/tomcat-embed-websocket-10.1.34.jar:/Users/aras88/.m2/repository/org/springframework/spring-web/6.2.1/spring-web-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-beans/6.2.1/spring-beans-6.2.1.jar:/Users/aras88/.m2/repository/io/micrometer/micrometer-observation/1.14.2/micrometer-observation-1.14.2.jar:/Users/aras88/.m2/repository/io/micrometer/micrometer-commons/1.14.2/micrometer-commons-1.14.2.jar:/Users/aras88/.m2/repository/org/springframework/spring-webmvc/6.2.1/spring-webmvc-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-aop/6.2.1/spring-aop-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-context/6.2.1/spring-context-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-expression/6.2.1/spring-expression-6.2.1.jar:/Users/aras88/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:/Users/aras88/.m2/repository/org/json/json/20220320/json-20220320.jar:/Users/aras88/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/aras88/.m2/repository/org/apache/groovy/groovy/4.0.24/groovy-4.0.24.jar:/Users/aras88/.m2/repository/org/apache/groovy/groovy-xml/4.0.24/groovy-xml-4.0.24.jar:/Users/aras88/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/aras88/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/aras88/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/aras88/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/aras88/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/aras88/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/aras88/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/aras88/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/aras88/.m2/repository/org/apache/groovy/groovy-json/4.0.24/groovy-json-4.0.24.jar:/Users/aras88/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/aras88/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/aras88/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.1/spring-boot-starter-test-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-test/3.4.1/spring-boot-test-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.1/spring-boot-test-autoconfigure-3.4.1.jar:/Users/aras88/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/aras88/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/aras88/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/aras88/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/aras88/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/aras88/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/aras88/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/aras88/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/aras88/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/aras88/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/aras88/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/aras88/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/aras88/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/aras88/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/aras88/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/aras88/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/aras88/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/aras88/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/aras88/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/aras88/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/aras88/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/aras88/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/aras88/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/aras88/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/aras88/.m2/repository/org/springframework/spring-core/6.2.1/spring-core-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-jcl/6.2.1/spring-jcl-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-test/6.2.1/spring-test-6.2.1.jar:/Users/aras88/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/Users/aras88/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/aras88/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.10/rxjava-3.1.10.jar:/Users/aras88/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/aras88/.m2/repository/org/freemarker/freemarker/2.3.33/freemarker-2.3.33.jar:/Users/aras88/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/aras88/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="APPLICATION_NAME" value="github-automation"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PL"/>
+    <property name="sun.boot.library.path" value="/Users/aras88/Library/Java/JavaVirtualMachines/corretto-21.0.1/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/aras88/GitHub/github-automation/target/surefire/surefirebooter-20241228023930992_3.jar /Users/aras88/GitHub/github-automation/target/surefire 2024-12-28T02-39-30_895-jvmRun1 surefire-20241228023930992_1tmp surefire_0-20241228023930992_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/aras88/GitHub/github-automation/target/test-classes:/Users/aras88/GitHub/github-automation/target/classes:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.1/spring-boot-starter-web-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.1/spring-boot-starter-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot/3.4.1/spring-boot-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.1/spring-boot-autoconfigure-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.1/spring-boot-starter-logging-3.4.1.jar:/Users/aras88/.m2/repository/ch/qos/logback/logback-classic/1.5.12/logback-classic-1.5.12.jar:/Users/aras88/.m2/repository/ch/qos/logback/logback-core/1.5.12/logback-core-1.5.12.jar:/Users/aras88/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/aras88/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/aras88/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/aras88/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/aras88/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.1/spring-boot-starter-json-3.4.1.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.2/jackson-databind-2.18.2.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.2/jackson-annotations-2.18.2.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.2/jackson-core-2.18.2.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.2/jackson-datatype-jdk8-2.18.2.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.2/jackson-datatype-jsr310-2.18.2.jar:/Users/aras88/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.2/jackson-module-parameter-names-2.18.2.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.1/spring-boot-starter-tomcat-3.4.1.jar:/Users/aras88/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.34/tomcat-embed-core-10.1.34.jar:/Users/aras88/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.34/tomcat-embed-el-10.1.34.jar:/Users/aras88/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.34/tomcat-embed-websocket-10.1.34.jar:/Users/aras88/.m2/repository/org/springframework/spring-web/6.2.1/spring-web-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-beans/6.2.1/spring-beans-6.2.1.jar:/Users/aras88/.m2/repository/io/micrometer/micrometer-observation/1.14.2/micrometer-observation-1.14.2.jar:/Users/aras88/.m2/repository/io/micrometer/micrometer-commons/1.14.2/micrometer-commons-1.14.2.jar:/Users/aras88/.m2/repository/org/springframework/spring-webmvc/6.2.1/spring-webmvc-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-aop/6.2.1/spring-aop-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-context/6.2.1/spring-context-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-expression/6.2.1/spring-expression-6.2.1.jar:/Users/aras88/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:/Users/aras88/.m2/repository/org/json/json/20220320/json-20220320.jar:/Users/aras88/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/Users/aras88/.m2/repository/org/apache/groovy/groovy/4.0.24/groovy-4.0.24.jar:/Users/aras88/.m2/repository/org/apache/groovy/groovy-xml/4.0.24/groovy-xml-4.0.24.jar:/Users/aras88/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/aras88/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/aras88/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/aras88/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/aras88/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/aras88/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/aras88/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/aras88/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/Users/aras88/.m2/repository/org/apache/groovy/groovy-json/4.0.24/groovy-json-4.0.24.jar:/Users/aras88/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/Users/aras88/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/Users/aras88/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.4.1/spring-boot-starter-test-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-test/3.4.1/spring-boot-test-3.4.1.jar:/Users/aras88/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.4.1/spring-boot-test-autoconfigure-3.4.1.jar:/Users/aras88/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/aras88/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/aras88/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/aras88/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/aras88/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/aras88/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/aras88/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/aras88/.m2/repository/org/assertj/assertj-core/3.26.3/assertj-core-3.26.3.jar:/Users/aras88/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/Users/aras88/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/aras88/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/aras88/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.4/junit-jupiter-api-5.11.4.jar:/Users/aras88/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/aras88/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/Users/aras88/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/aras88/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/aras88/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/aras88/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/aras88/.m2/repository/org/mockito/mockito-core/5.14.2/mockito-core-5.14.2.jar:/Users/aras88/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar:/Users/aras88/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/aras88/.m2/repository/org/mockito/mockito-junit-jupiter/5.14.2/mockito-junit-jupiter-5.14.2.jar:/Users/aras88/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/aras88/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/aras88/.m2/repository/org/springframework/spring-core/6.2.1/spring-core-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-jcl/6.2.1/spring-jcl-6.2.1.jar:/Users/aras88/.m2/repository/org/springframework/spring-test/6.2.1/spring-test-6.2.1.jar:/Users/aras88/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/Users/aras88/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/aras88/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.10/rxjava-3.1.10.jar:/Users/aras88/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/aras88/.m2/repository/org/freemarker/freemarker/2.3.33/freemarker-2.3.33.jar:/Users/aras88/.m2/repository/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar:/Users/aras88/.m2/repository/com/google/errorprone/error_prone_annotations/2.27.0/error_prone_annotations-2.27.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/aras88"/>
+    <property name="user.language" value="pl"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="/Users/aras88/Library/Java/JavaVirtualMachines/corretto-21.0.1/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/aras88/GitHub/github-automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/aras88/GitHub/github-automation/target/surefire/surefirebooter-20241228023930992_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS"/>
+    <property name="user.name" value="aras88"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-21.0.1.12.1"/>
+    <property name="localRepository" value="/Users/aras88/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-21/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/km/msdp3p9x56x09nk72d2hg5_m0000gn/T/"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="/Users/aras88/GitHub/github-automation"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="53050"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/aras88/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="21.0.1+12-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[github-automation] "/>
+  </properties>
+  <testcase name="testGetUserProfile_InvalidToken(ExtentTest)" classname="com.github.tests.UserProfileTest" time="0.242">
+    <system-out><![CDATA[2024-12-28T02:39:42.620+01:00  INFO 53050 --- [github-automation] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.github.tests.UserProfileTest]: UserProfileTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-28T02:39:42.622+01:00  INFO 53050 --- [github-automation] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.github.GitHubAutomationApplication for test class com.github.tests.UserProfileTest
+Test added to map: [engine:junit-jupiter]/[class:com.github.tests.UserProfileTest]/[method:testGetUserProfile_InvalidToken(com.aventstack.extentreports.ExtentTest)] -> testGetUserProfile_InvalidToken
+{
+    "message": "Bad credentials",
+    "documentation_url": "https://docs.github.com/rest",
+    "status": "401"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUserProfile_Success(ExtentTest)" classname="com.github.tests.UserProfileTest" time="0.284">
+    <system-out><![CDATA[Test added to map: [engine:junit-jupiter]/[class:com.github.tests.UserProfileTest]/[method:testGetUserProfile_Success(com.aventstack.extentreports.ExtentTest)] -> testGetUserProfile_Success
+{
+    "login": "mastalerzit",
+    "id": 193018957,
+    "node_id": "U_kgDOC4E8TQ",
+    "avatar_url": "https://avatars.githubusercontent.com/u/193018957?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mastalerzit",
+    "html_url": "https://github.com/mastalerzit",
+    "followers_url": "https://api.github.com/users/mastalerzit/followers",
+    "following_url": "https://api.github.com/users/mastalerzit/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mastalerzit/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mastalerzit/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mastalerzit/subscriptions",
+    "organizations_url": "https://api.github.com/users/mastalerzit/orgs",
+    "repos_url": "https://api.github.com/users/mastalerzit/repos",
+    "events_url": "https://api.github.com/users/mastalerzit/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mastalerzit/received_events",
+    "type": "User",
+    "user_view_type": "private",
+    "site_admin": false,
+    "name": null,
+    "company": null,
+    "blog": "",
+    "location": null,
+    "email": null,
+    "hireable": null,
+    "bio": null,
+    "twitter_username": null,
+    "notification_email": null,
+    "public_repos": 0,
+    "public_gists": 0,
+    "followers": 1,
+    "following": 0,
+    "created_at": "2024-12-27T21:44:50Z",
+    "updated_at": "2024-12-27T21:45:05Z",
+    "private_gists": 0,
+    "total_private_repos": 0,
+    "owned_private_repos": 0,
+    "disk_usage": 0,
+    "collaborators": 0,
+    "two_factor_authentication": false,
+    "plan": {
+        "name": "free",
+        "space": 976562499,
+        "collaborators": 0,
+        "private_repos": 10000
+    }
+}
+]]></system-out>
+  </testcase>
+</testsuite>

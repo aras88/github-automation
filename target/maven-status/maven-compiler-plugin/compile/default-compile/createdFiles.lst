@@ -1,0 +1,7 @@
+com/github/config/GitHubProperties$Api.class
+com/github/service/GitHubApiClient.class
+com/github/config/GitHubProperties$DefaultProps.class
+com/github/model/UserProfile.class
+com/github/config/GitHubProperties.class
+com/github/GitHubAutomationApplication.class
+com/github/model/Repository.class

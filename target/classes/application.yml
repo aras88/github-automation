@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: github-automation
+
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: false
+
+github:
+  api:
+    baseurl: https://api.github.com
+    token: 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
+  default:
+    owner: mastalerzit
+    repo: test-repo
